@@ -8,8 +8,8 @@ resource "azurerm_mssql_server" "example" {
   resource_group_name          = azurerm_resource_group.example.name
   location                     = azurerm_resource_group.example.location
   version                      = "12.0"
-  administrator_login          = "missadministrator"
-  administrator_login_password = "thisIsKat11"
+  administrator_login          = var.db_login
+  administrator_login_password = var.db_password
   minimum_tls_version          = "1.2"
 
   azuread_administrator {
