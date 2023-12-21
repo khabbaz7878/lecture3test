@@ -2,7 +2,7 @@ locals {​
 
   service_name = "forum"​
 
-  owner        = "Community Team"​
+  owner = "Community Team"​
 
 }​
 
