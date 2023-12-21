@@ -18,3 +18,7 @@ variable "db_login"{
 variable "db_password"{
   type=string
 }
+variable "countNumber"{
+type=number
+default=0
+}
