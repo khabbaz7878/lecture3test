@@ -4,8 +4,8 @@ output "print"{
 
 }​
 
-output "secondprint"{​
+output "secondprint"{
 
-      value = local.owner​
+      value = local_owner
 
 }
