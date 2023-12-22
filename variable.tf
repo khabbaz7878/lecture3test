@@ -45,6 +45,3 @@ variable "environment"{
  type=string
  default="staging"
 }
-variable "availability_zones" {
-  type = set(string)
-}
