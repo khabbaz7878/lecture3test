@@ -45,3 +45,9 @@ variable "environment"{
  type=string
  default="staging"
 }
+variable "enable_monitoring" {
+  type = bool
+}
+variable "instance_type" {
+  type = string
+}
