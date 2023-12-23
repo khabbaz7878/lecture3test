@@ -6,7 +6,7 @@ output "lengthowner"{
 value=local.owner
 }
 output "lengthforum"{
-value=local.lengthforum
+value=local.lengthofservice_name
 }
 output "counNumber"{
 value=var.countNumber
