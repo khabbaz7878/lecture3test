@@ -1,1 +1,1 @@
-myname="Husni"
+myname="husni"
