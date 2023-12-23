@@ -49,11 +49,11 @@ variable "example_list" {
   type    = list(string)
   default = ["item1", "item2", "item3"]
 }
-variable "CanadianFoods" {
+variable "Canadianfoods" {
   type = list(string)
   default = ["Poutine", "LobsterRolls", "bagles", "SmokedMeat"]
 }
-variable "USFood"{
+variable "USfood"{
 type = list(string)
 default = ["Burger","ApplePie","ClamChowder","BBQRibs"]
 }
