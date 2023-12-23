@@ -61,3 +61,7 @@ variable "number_list" {
   type = list(number)
   default = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 }
+variable "numbers" {
+  type = list(string)
+  default = ["10", "20", "30"]
+}
