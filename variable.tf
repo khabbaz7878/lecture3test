@@ -49,3 +49,7 @@ variable "example_list" {
   type    = list(string)
   default = ["item1", "item2", "item3"]
 }
+variable "foods" {
+  type = list(string)
+  default = ["Pizza", "Pasta", "Tacos", "Sushi", "Burgers", "Salad", "Sandwich", "Soup", "Steak", "Ice Cream"]
+}
