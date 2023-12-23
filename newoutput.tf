@@ -22,6 +22,9 @@ output "Canadianfoods" {
 output "USfood" {
   value = [for food in var.USfood : food]
 }
+output "number_list" {
+  value = var.number_list
+}
 /*
 for 1st element in -->inside the list variable winterlistOfSports--->"icehockey"1st element
 for 2nd element in -->inside the list variable winterlistOfSports--->"snowboarding" 2nd element
