@@ -25,6 +25,9 @@ output "USfood" {
 output "number_list" {
   value = var.number_list
 }
+output "sum" {
+  value = "${local.sum}" 
+}
 /*
 for 1st element in -->inside the list variable winterlistOfSports--->"icehockey"1st element
 for 2nd element in -->inside the list variable winterlistOfSports--->"snowboarding" 2nd element
