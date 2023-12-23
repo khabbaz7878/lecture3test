@@ -57,3 +57,7 @@ variable "USfood"{
 type = list(string)
 default = ["Burger","ApplePie","ClamChowder","BBQRibs"]
 }
+variable "number_list" {
+  type = list(number)
+  default = [for i in range(1, 11) : i]
+}
