@@ -12,5 +12,5 @@ locals {
   num2 = tonumber(var.numbers[1]) 
   num3 = tonumber(var.numbers[2])
   
-  sum = ([local.num1 + local.num2 + local.num3])
+  sum = [local.num1 + local.num2 + local.num3]
 }
