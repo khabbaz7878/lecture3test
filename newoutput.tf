@@ -2,8 +2,8 @@ output "print"{
 value = local.service_name
 
 }
-output "lengthsa"{
-value=local.lengthsa
+output "lengthowner"{
+value=local.owner
 }
 output "lengthforum"{
 value=local.lengthforum
