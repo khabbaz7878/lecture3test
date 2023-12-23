@@ -14,6 +14,18 @@ value=var.countNumber
 output "favoritclublist"{
     value=[for sport in local.favoritclublist:sport]
 }
+
+output "foods" {
+  value = [for food in var.foods : food]
+}
+
+output "upper_case_foods" {
+  value = [for food in var.foods : upper(food)] 
+}
+
+output "food_count" {
+  value = length(var.foods)
+}
 /*
 for 1st element in -->inside the list variable winterlistOfSports--->"icehockey"1st element
 for 2nd element in -->inside the list variable winterlistOfSports--->"snowboarding" 2nd element
