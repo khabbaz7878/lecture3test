@@ -15,7 +15,7 @@ output "favoritclublist"{
     value=[for sport in local.favoritclublist:sport]
 }
 
-output "Canadianfood" {
+output "Canadianfoods" {
   value = [for food in var.foods : food]
 }
 
