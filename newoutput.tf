@@ -1,5 +1,5 @@
 output "print"{
-value = local.servicename
+value = local.service_name
 
 }
 output "lengthsa"{
