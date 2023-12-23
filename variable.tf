@@ -59,5 +59,5 @@ default = ["Burger","ApplePie","ClamChowder","BBQRibs"]
 }
 variable "number_list" {
   type = list(number)
-  default = [range(1, 11)]
+  default = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 }
