@@ -45,11 +45,7 @@ variable "environment"{
  type=string
  default="staging"
 }
-variable "prefix"{
- type=string
- default="mcit"
-}
-variable "component" {
-  type    = list
-  default = ["bastion", "frontproxy", "db", "infra"]
+variable "example_list" {
+  type    = list(string)
+  default = ["item1", "item2", "item3"]
 }
