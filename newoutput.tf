@@ -16,11 +16,11 @@ output "favoritclublist"{
 }
 
 output "Canadianfoods" {
-  value = [for food in var.foods : food]
+  value = [for food in var.Canadianfoods : food]
 }
 
 output "USfood" {
-  value = [for food in var.foods : food]
+  value = [for food in var.USfood : food]
 }
 /*
 for 1st element in -->inside the list variable winterlistOfSports--->"icehockey"1st element
