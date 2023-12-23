@@ -11,8 +11,8 @@ value=local.lengthofservice_name
 output "counNumber"{
 value=var.countNumber
 }
-output "wintersportslist"{
-    value=[for sport in local.winterlistOfSports:sport]
+output "favoritclublist"{
+    value=[for sport in local.favoritclublist:sport]
 }
 /*
 for 1st element in -->inside the list variable winterlistOfSports--->"icehockey"1st element
