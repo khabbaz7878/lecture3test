@@ -75,10 +75,3 @@ variable "num3" {
   type = number
   default = 30
 }
-#create storage
-variable "first_name"
-default = "husni"
-}
-variable "last_name"
-default = "khabbaz"
-}
