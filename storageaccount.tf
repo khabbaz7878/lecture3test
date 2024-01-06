@@ -1,5 +1,5 @@
 
-}
+
 resource "azurerm_storage_account" "azurermmcit" {
   name                     = "${var.myname}storage${var.countNumber}"
   resource_group_name      = azurerm_resource_group.mcit420zz5um.name
@@ -11,7 +11,7 @@ resource "azurerm_storage_account" "azurermmcit" {
   tags = {
     environment = var.environment
   }
-}
+
 resource "azurerm_storage_account" "sa" {
   name                     = "${var.prefix}${var.myname}forstorage"
   resource_group_name      = azurerm_resource_group.mcit420zz5um.name
