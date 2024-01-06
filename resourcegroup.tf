@@ -12,11 +12,7 @@ resource "azurerm_mssql_server" "example" {
   administrator_login_password = var.db_password
   minimum_tls_version          = "1.2"
 }
-  azuread_administrator {
-    login_username = "AzureAD Admin"
-    object_id      = "00000000-0000-0000-0000-000000000000"
-  }
-
+  
   tags = {
     environment = "production"
   }
