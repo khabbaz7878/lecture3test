@@ -13,7 +13,4 @@ resource "azurerm_mssql_server" "example" {
   minimum_tls_version          = "1.2"
 }
   
-  tags = {
-    environment = "production"
-  }
-
+  
