@@ -8,6 +8,7 @@ resource "azurerm_storage_account" "azurermmcit" {
   account_replication_type = var.account_replication_type
   access_tier=var.access_tier
   cross_tenant_replication_enabled = var.cross_tenant_replication_enabled
+}
   tags = {
     environment = var.environment
   }
