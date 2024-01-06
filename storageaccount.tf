@@ -9,9 +9,7 @@ resource "azurerm_storage_account" "azurermmcit" {
   access_tier=var.access_tier
   cross_tenant_replication_enabled = var.cross_tenant_replication_enabled
 }
-  tags = {
-    environment = var.environment
-  }
+  
 
 resource "azurerm_storage_account" "sa" {
   name                     = "${var.prefix}${var.myname}forstorage"
