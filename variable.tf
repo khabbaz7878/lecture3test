@@ -75,3 +75,29 @@ variable "num3" {
   type = number
   default = 30
 }
+
+variable "example_map" {
+type = map(object({
+ name                 = string
+ enemies_destroyed    = number
+ badguy               = bool
+ }))
+
+ default = {
+   key1 = {
+     name                = "luke"
+     enemies_destroyed   = 4252
+      badguy              = false
+    }
+    key2 = {
+      name                = "yoda"
+     enemies_destroyed   = 988
+      badguy              = false
+    }
+    key3 = {
+      name                = "darth"
+      enemies_destroyed   = 282032989844
+      badguy              = true
+    }
+ }
+}
