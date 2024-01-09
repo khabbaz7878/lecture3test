@@ -34,7 +34,9 @@ output "example_map_output" {
 output "lightsaber_color_map" {
  value = var.lightsaber_color_map
 }
-
+output "characters_map" {
+ value = local.map
+}
 
 /*
 for 1st element in -->inside the list variable winterlistOfSports--->"icehockey"1st element
