@@ -110,11 +110,7 @@ variable "lightsaber_color_map" {
     darth = ["red"]
  }
 }
-locals {
- characters = ["luke", "yoda", "darth"]
- enemies_destroyed = [4252, 900, 20000056894]
 
-}
 locals {
  characters = ["luke", "yoda", "darth"]
  enemies_destroyed = [4252, 900, 20000056894]
