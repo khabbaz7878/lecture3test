@@ -12,14 +12,18 @@ resource "azurerm_mssql_server" "example" {
   administrator_login_password = var.db_password
   minimum_tls_version          = "1.2"
 }
-  resource "aws_instance" "servers" {
- count = 4 # create four similar EC2 instances
+resource "azurerm_resource_group" "example" {
+ name     = "example-resources"
+ location = "Canada east"
+}
 
- instance_type = "t2.micro"
- ami           = "ami-a1b2c3d4"
+resource "azurerm_virtual_network" "example" {
+ name                = "example-vnet"
+ address_space       = ["10.0.0.0/16"]
+ location            = azurerm_resource_group.example.location
+ resource_group_name = azurerm_resource_group.example.name
 
  tags = {
-    Name = "Servers ${count.index}"
+    environment = "example"
  }
 }
-  
