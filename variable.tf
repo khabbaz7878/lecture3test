@@ -130,9 +130,9 @@ variable "enemies_destroyed" {
 }
 
 locals {
- map = {
+ map1 = {
     for index, character in toset(var.characters):
-      index => character == var.enemies_destroyed[index]
+      index = character == var.enemies_destroyed[index]
  }
 }
 
