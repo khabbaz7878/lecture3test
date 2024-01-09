@@ -121,3 +121,18 @@ locals {
 }
 
 
+variable "characters" {
+ type = list(string)
+}
+
+variable "enemies_destroyed" {
+ type = list(string)
+}
+
+locals {
+ map = {
+    for index, character in toset(var.characters):
+      index => character == var.enemies_destroyed[index]
+ }
+}
+
