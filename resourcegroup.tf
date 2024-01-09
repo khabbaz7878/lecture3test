@@ -12,14 +12,14 @@ resource "azurerm_mssql_server" "example" {
   administrator_login_password = var.db_password
   minimum_tls_version          = "1.2"
 }
-  resource "aws_instance" "server" {
+  resource "aws_instance" "servers" {
  count = 4 # create four similar EC2 instances
 
  instance_type = "t2.micro"
  ami           = "ami-a1b2c3d4"
 
  tags = {
-    Name = "Server ${count.index}"
+    Name = "Servers ${count.index}"
  }
 }
   
