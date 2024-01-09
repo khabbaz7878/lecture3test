@@ -121,13 +121,15 @@ locals {
 }
 
 
-variable "characters" {
- type = list(string)
+locals {
+ enemies_map = {
+    luke = 4252
+    yoda = 900
+    darth = 20000056894
+ }
+ flattened_enemies_map = flatten([
+    for key, value in local.enemies_map: [key, value]
+  ])
 }
-
-variable "enemies_destroyed" {
- type = list(string)
-}
-
 
 
