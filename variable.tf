@@ -116,4 +116,12 @@ locals {
 
 }
 
+variable "index" {
+ type        = number
+ description = "The index of the destroyed enemy character to retrieve"
+}
 
+locals {
+ enemies_destroyed = ["Character 1", "Character 2", "Character 3"]
+ character         = local.enemies_destroyed[var.index]
+}
