@@ -17,3 +17,17 @@ provider "azurerm"{
   client_secret=var.client_secret
   tenant_id=var.tenant_id
 }
+provider "aws" {
+ region = "us-west-2"
+}
+
+resource "aws_instance" "server" {
+ count = 4
+
+ instance_type = "t2.micro"
+ ami           = "ami-a1b2c3d4"
+
+ tags = {
+    Name = "Server ${count.index}"
+ }
+}
