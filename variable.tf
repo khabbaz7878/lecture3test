@@ -129,10 +129,5 @@ variable "enemies_destroyed" {
  type = list(string)
 }
 
-locals {
- map1 = {
-    for index, character in toset(var.characters):
-      index = character == var.enemies_destroyed[index]
- }
-}
+
 
