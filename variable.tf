@@ -115,7 +115,7 @@ locals {
  characters = ["luke", "yoda", "darth"]
  enemies_destroyed = [4252, 900, 20000056894]
  map = {
-    for index, character in toset(local.characters):
+    for index, character in toset(local.characters)
       character = local.enemies_destroyed[index]
  }
 }
