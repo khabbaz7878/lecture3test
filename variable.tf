@@ -116,7 +116,6 @@ locals {
 
 }
 
-variable "index" {
  type        = number
  description = "The index of the destroyed enemy character to retrieve"
 }
