@@ -40,6 +40,7 @@ value ={
 for index, character in toset(local.characters):
 character => local.enemies_destroyed[index]
 }
+}
 /*
 for 1st element in -->inside the list variable winterlistOfSports--->"icehockey"1st element
 for 2nd element in -->inside the list variable winterlistOfSports--->"snowboarding" 2nd element
