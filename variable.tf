@@ -116,11 +116,3 @@ locals {
 
 }
 
- type        = number
- description = "The index of the destroyed enemy character to retrieve"
-}
-
-locals {
-
- character         = local.enemies_destroyed[var.index]
-}
