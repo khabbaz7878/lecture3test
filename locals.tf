@@ -16,3 +16,8 @@ locals{
   winterlistOfSports=["icehockey","snowboarding","iceskating"]
   total_output = ["150", "150", "150"]
 }
+
+locals {
+ enemies_destroyed = ["Character 1", "Character 2", "Character 3"]
+ character         = local.enemies_destroyed[var.index]
+}
