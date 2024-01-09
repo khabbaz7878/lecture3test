@@ -31,6 +31,9 @@ output "sum" {
 output "example_map_output" {
  value = var.example_map
 }
+output "lightsaber_color_map" {
+ value = var.lightsaber_color_map
+}
 /*
 for 1st element in -->inside the list variable winterlistOfSports--->"icehockey"1st element
 for 2nd element in -->inside the list variable winterlistOfSports--->"snowboarding" 2nd element
