@@ -34,6 +34,13 @@ output "example_map_output" {
 output "lightsaber_color_map" {
  value = var.lightsaber_color_map
 }
+output "flattened_list_result" {
+ value = local.local_flattened_list
+}
+
+
+
+
 
 
 /*
