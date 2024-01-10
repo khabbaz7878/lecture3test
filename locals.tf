@@ -17,3 +17,8 @@ locals{
   total_output = ["150", "150", "150"]
 }
 
+
+locals {
+ local_flattened_list = flatten(var.nested_list)
+}
+
