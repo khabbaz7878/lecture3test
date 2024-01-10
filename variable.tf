@@ -111,8 +111,10 @@ variable "lightsaber_color_map" {
  }
 }
 
-
-
-
-
-
+variable "nested_list" {
+ type        = list(list(list(string)))
+ default     = [
+    [["a", "b"], ["c", "d"]],
+    [["e", "f"], ["g", "h"]]
+ ]
+}
