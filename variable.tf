@@ -126,3 +126,9 @@ variable "nested_map" {
  }
 }
 
+variable "my_map" {
+ type = map(string)
+ default = {
+    "key1" = "value1"
+ }
+}
