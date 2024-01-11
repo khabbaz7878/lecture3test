@@ -27,3 +27,8 @@ locals {
 }
 
 
+
+locals {
+ my_value = lookup(var.my_map, "key1", "")
+}
+
