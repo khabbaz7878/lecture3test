@@ -4,10 +4,7 @@ variable "user_roles" {
  }
 }
 
-variable "default_role" {
- type = string
- default = "guest"
-}
+
 variable "default_role" {
  type = string
  default = "user"
