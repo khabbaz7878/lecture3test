@@ -8,7 +8,10 @@ variable "default_role" {
  type = string
  default = "guest"
 }
-
+variable "default_role" {
+ type = string
+ default = "user"
+}
 locals {
  alice_role = lookup(var.user_roles, "alice", var.default_role)
  bob_role   = lookup(var.user_roles, "bob", var.default_role)
