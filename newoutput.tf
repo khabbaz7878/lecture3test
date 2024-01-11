@@ -41,7 +41,9 @@ output "flattened_list_result" {
 output "flattened_map_result" {
  value=local.flattened_map
 }
-
+output "my_value_output" {
+ value = local.my_value
+}
 
 
 
