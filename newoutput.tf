@@ -38,6 +38,9 @@ output "flattened_list_result" {
  value = local.local_flattened_list
 }
 
+output "flattened_map_result" {
+ value=local.flattened_map
+}
 
 
 
