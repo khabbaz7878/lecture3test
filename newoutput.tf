@@ -38,13 +38,6 @@ output "flattened_list_result" {
  value = local.local_flattened_list
 }
 
-output "alpha-letter_readout" {
- value = local.map_of_alpha-letter
-}
-
-output "starwars_char_deaths" {
- value = local.map_of_alpha-letter
-}
 
 
 
