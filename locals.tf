@@ -22,3 +22,12 @@ locals {
  local_flattened_list = flatten(var.nested_list)
 }
 
+locals {
+ alphabets = ["a", "b", "c", "d", "e"]
+ numbers   = [1, 2, 3, 4, 5]
+ map_of_alpha-letter = {
+    for index, letter in local.alphabets:
+      letter -> local.numbers[index]
+ }
+}
+
