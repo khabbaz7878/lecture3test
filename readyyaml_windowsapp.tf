@@ -22,5 +22,5 @@ resource "azurerm_service_plan" "example" {
  location            = "West US 2"
  resource_group_name = azurerm_resource_group.example.name
  os_type             = "Windows"
- sku_name            = "Standard"
+ sku_name            = "B1"
 }
