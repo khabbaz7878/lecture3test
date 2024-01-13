@@ -1,0 +1,11 @@
+listofstorageaccount:
+ - name: beststorageountever1
+    account_tier: Standard_LRS
+    account_replication_type: GRS
+    access_tier: Hot
+    cross_tenant_replication_enabled: false
+  - name: beststorageaccountever2
+    account_tier: Premium_LRS
+    account_replication_type: LRS
+    access_tier: Cool
+    cross_tenant_replication_enabled: true
