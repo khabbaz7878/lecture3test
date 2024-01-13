@@ -8,7 +8,7 @@ resource "azurerm_windows_web_app" "example" {
     always_on        = true
     application_stack {
       current_stack = "Windows"
-      dotnet_framework_version = "v4.0"
+     
     }
  }
 
