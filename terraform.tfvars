@@ -8,7 +8,7 @@ listofstorageaccount=[
     "account_replication_type": "GRS",
     "access_tier": "Hot",
     "cross_tenant_replication_enabled": false
-  },
+  }
   {
     "name": "mystorageaccount2",
     "account_tier": "Premium",
