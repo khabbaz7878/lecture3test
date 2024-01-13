@@ -34,7 +34,7 @@ locals {
 
 locals {
   linux_app = [
-    for f in fileset("${path.moduleconfigs", "*.yaml") :
+    for f in fileset("${path.moduleconfigs}", "*.yaml") :
     yamldecode(file("${path.module}/configs}"))
   ]
 
