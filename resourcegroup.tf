@@ -27,4 +27,7 @@ resource "azurerm_virtual_network" "example" {
     environment = "example"
  }
 }
-
+resource "azurerm_resource_group" "azureresourcegroup" {
+  name     = "my-resource-group"
+  location = "eastus"
+}
