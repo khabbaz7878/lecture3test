@@ -28,3 +28,14 @@ resource "azurerm_linux_web_app" "batcha06webapp" {
 
   site_config {}
 }
+resource "azurerm_storage_account" "example" {
+  for_each = { for sa in var.listofstorageaccount : sa.name => sa }
+
+  name                     = each.value.name
+  resource_group_name      = azurerm_resource_group.example.name
+  location                 = azurerm_resource_group.example.location
+  account_tier             = each.value.account_tier
+  account_replication_type = each.value.account_replication_type
+  access_tier              = each.value.access_tier
+  enable_cross_tenant_replication = each.value.cross_tenant_replication_enabled
+}
