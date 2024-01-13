@@ -132,4 +132,7 @@ variable "my_map" {
     "key1" = "value1"
  }
 }
-
+variable "listofstorageaccount" {
+ type        = list(object({ name = string, account_tier = string, account_replication_type = string, access_tier = string, cross_tenant_replication_enabled = bool }))
+ description = "A list of storage account configurations"
+}
