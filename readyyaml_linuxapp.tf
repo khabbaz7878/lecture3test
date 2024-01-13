@@ -37,5 +37,5 @@ resource "azurerm_storage_account" "example" {
   account_tier             = each.value.account_tier
   account_replication_type = each.value.account_replication_type
   access_tier              = each.value.access_tier
-  enable_cross_tenant_replication = each.value.cross_tenant_replication_enabled
+  
 }
