@@ -1,6 +1,7 @@
 myname="husni"
 
 # variables.tfvars
+/*
 listofstorageaccount=[
   {
     "name": "mystorageaccount1",
@@ -17,3 +18,4 @@ listofstorageaccount=[
     "cross_tenant_replication_enabled": true
   }
 ]
+*/
