@@ -16,9 +16,4 @@ resource "azurerm_windows_web_app" "example" {
     "WEBSITE_NODE_DEFAULT_VERSION" = "10.14"
  }
 }
-resource "azurerm_service_plan" "example" {
- name                = "example-service-plan"
- location            = "West US 2"
- resource_group_name = azurerm_resource_group.example.name
- sku                 = "S1"
-}
+
