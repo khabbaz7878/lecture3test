@@ -12,10 +12,6 @@ resource "azurerm_mssql_server" "example" {
   administrator_login_password = var.db_password
   minimum_tls_version          = "1.2"
 }
-resource "azurerm_resource_group" "example" {
- name     = "example-resources"
- location = "Canada east"
-}
 
 
 }
