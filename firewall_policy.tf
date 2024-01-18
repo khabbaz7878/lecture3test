@@ -107,5 +107,4 @@ resource "azurerm_public_ip" "example" {
 resource "azurerm_virtual_network" "example" {
  name                = "example-virtual-network"
  location            = azurerm_resource_group.example.location
- resource
 }
