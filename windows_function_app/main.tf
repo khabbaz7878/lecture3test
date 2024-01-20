@@ -1,5 +1,5 @@
 module "windowsfuction_app" {
-  source   = "./modules/windowsfunctionapp"
+  source   = "./windows_function_app"
   name= var.wfaname
   account_tier= var.account_tier
   account_replication_type= var.account_replication_type
